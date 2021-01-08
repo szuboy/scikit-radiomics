@@ -355,37 +355,6 @@ index.rst：
     
 ***************************************   
 ```
-- 6.修改完成后，提交github，打开Read the Docs的"构建"->"阅读文档"
-![avatar](https://note.youdao.com/yws/api/personal/file/FE63A4613F564B999AE73F4F48E723D6?method=download&shareKey=15fdae5ca81b1d41b5ac2d3d06c9c7b9)
-![avatar](https://note.youdao.com/yws/api/personal/file/671A4532BC9143538339F496DD8D007D?method=download&shareKey=b1124de73e066e549fea36a8af01f6a4)
-
-如上图，你会发现readthedocs-zh的项目关联的文档变成英文了，如何变成双语呢？
-
-- 7.选择readthedocs-demo-zh项目，点击“管理”->"设置"，修改语言“Simplified”，点击保存，等待构建完成
-![avatar](https://note.youdao.com/yws/api/personal/file/CBBB38E6F9E1473DB495E1CDDA1F9792?method=download&shareKey=c168e048dd2e142ecfc222a508db4d3c)
-
-- 8.选择readthedocs-demo-zh项目，点击“管理”->"高级设置"，修改“Python 配置文件”项，docs/zh_CN/source/conf.py，点击保存，等待构建完成
-![avatar](https://note.youdao.com/yws/api/personal/file/8988E29DB08D4724A130B256F3238F96?method=download&shareKey=de24c9cab23ace5ee7f8eb552609b50b)
-
-- 9.构建完成后，点击“阅读文档”，会发现url对应的文档都是中文，如下：
-![avator](https://note.youdao.com/yws/api/personal/file/D755A3DFF31F4821A6B3C102790E60F9?method=download&shareKey=d4369191cc6e794554bae9dee5798d1b)
-
-- 10.接下来，配置英文项目，在Read the Docs增加新的项目readthedocs-demo-en，新增的项目因为需要对应同一个地址，所以需要手工导入；
-![avatar](https://note.youdao.com/yws/api/personal/file/FF20EE1629BC4D9FAF50A90A05010542?method=download&shareKey=d30a95f09f947f42f48346810c08cd32)
-
-- 11.导入完成后，重新执行第8步和第9步
-![avatar](https://note.youdao.com/yws/api/personal/file/B422EFBACC894452B2E893D8617B123D?method=download&shareKey=13bb59faf40ea9298398c19e9948f512)
-![avatar](https://note.youdao.com/yws/api/personal/file/247EB87D65D44B09986EEE7F7F86F84F?method=download&shareKey=76347e2fd07f10f1472dab7dd0d29aa5)
-![avatar](https://note.youdao.com/yws/api/personal/file/AC30B33ED5DB441E8D44D9A7CBE26BFF?method=download&shareKey=73694a13717070c53001066a95cb3067)
-
-- 12.完成后，选择readthedocs-demo-en项目，点击“阅读文档”，会发现url对应的文档都是英文，如下：
-![avatar](https://note.youdao.com/yws/api/personal/file/73934503639045A4B6CA70E7D94AB883?method=download&shareKey=f3f8621fd603caabca124f6b64e3efcf)
-
-- 13.接下来配置语言切换，选择readthedocs-demo-zh，“管理”->“翻译”-"添加"，选择readthedocs-demo-en进行添加，添加完成后，点击“阅读文档”，会出现语言切换，如下：
-![avator](https://note.youdao.com/yws/api/personal/file/01CE3470EF3246BDB981044B09A879DA?method=download&shareKey=cc25122978e902fc3385f985e1864607)
-![avator](https://note.youdao.com/yws/api/personal/file/B66FDD85B5A248EBBAB80FF55043635B?method=download&shareKey=e94701cf3a316b68db7f4d8d85ea66e7)
-
-好了，经过如上步骤，已经完成了中英文的配置，我们给readthedocs-demo增加一个README.md来关联我们的github
 
 ## Read the Docs关联github
 
