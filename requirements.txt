@@ -1,0 +1,4 @@
+numpy>=1.9.2
+six>=1.10.0
+pykwalify>=1.6.0
+SimpleITK>=0.9.1

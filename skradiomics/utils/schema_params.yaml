@@ -1,0 +1,101 @@
+# Parameters schema
+name: Parameter schema
+desc: This schema defines what arguments may be present in the parameters file that can be passed to the scikit-radiomics package.
+type: map
+mapping:
+  setting:
+    type: map
+    mapping:
+
+      # process configuration
+      preprocessMethod:
+        func: checkPreprocessMethod
+        seq:
+          - type: str
+
+      windowWidth:
+        type: int
+        range:
+          min: 1
+      windowLevel:
+        type: int
+        range:
+          min: 0
+      resampledPixelSpacing:
+        seq:
+          - type: float
+            range:
+              min: 0
+      interpolator:
+        type: str
+        func: checkInterpolator
+
+      normalize:
+        type: bool
+      normalizeScale:
+        type: float
+        range:
+          min-ex: 0
+      removeOutliers:
+        type: float
+        range:
+          min-ex: 0
+          max-ex: 100
+
+      minimumROISize:
+        type: int
+        range:
+          min-ex: 0
+      label:
+        type: int
+
+      # feature configuration
+      imageType:
+        func: checkImageType
+        seq:
+          - type: str
+
+      featureClass:
+        func: checkFeatureClass
+        seq:
+          - type: str
+
+      binWidth:
+        type: float
+        range:
+          min-ex: 0
+      voxelArrayShift:
+        type: float
+        range:
+          min-ex: 0
+
+      LoGSigma:
+        seq:
+          - type: float
+            range:
+              min-ex: 0
+
+      wavelet:
+        type: str
+        func: checkWavelet
+      gradientUseSpacing:
+        type: bool
+      GLCMDistance:
+        seq:
+          - type: int
+            range:
+              min-ex: 0
+      NGTDMDistance:
+        seq:
+          - type: int
+            range:
+              min-ex: 0
+      symmetricalGLCM:
+        type: bool
+      weightingNorm:
+        type: any
+        func: checkWeighting
+      gldm_a:
+        type: int
+        range:
+          min: 0
