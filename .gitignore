@@ -9,5 +9,6 @@ __pycache__/
 
 # Pypi release
 skradiomics.egg-info/
+scikit_radiomics.egg-info/
 build/
 dist/
