@@ -14,7 +14,7 @@ with open('README.md', 'rb') as fp:
 package_data = ['%s/%s' % ('utils', filename) for filename in os.listdir('skradiomics/utils') if not filename.endswith('.py')]
 
 setup(
-    name='skradiomics',
+    name='scikit-radiomics',
 
     url='https://github.com/szuboy/scikit-radiomics#readme',
     project_urls={
